@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FelipeBank</title>
+</head>
+<body>
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>FelipeBank</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button type="submit" id="login_button">Entrar</button>
+        </form>
+
+        <div id="caixa_eletronico" class="hidden">
+            <h2>Bem-vindo <span id="usuario_nome"></span>!</h2>
+            <div>
+                <p>Saldo: R$<span id="saldo">1000.00</span></p>
+                <p>Extrato: <span id="extrato">Transações fictícias</span></p>
+            </div>
+            <button id="botao_saldo">Saldo</button>
+            <button id="botao_extrato">Extrato</button>
+            <button id="botao_saque">Saque</button>
+            <button id="botao_deposito">Depósito</button>
+            <button id="botao_transferencia">Transferência</button>
+            <button id="botao_sair">Sair</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
